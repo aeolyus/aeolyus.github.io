@@ -1,15 +1,30 @@
 body {
   color: #171717;
   background-color: #f2f2f2;
-  margin: 2em;
   font-size: 1.1em;
+  font-family: georgia, serif;
   line-height: 1.4em;
+  max-width: 37.5em;
+  margin: 2em 2em 2em 20%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  max-width: 650px;
-  font-family: Georgia, serif;
+main {
+  padding-bottom: 3em;
+  flex: 1;
+}
 
-  position: absolute;
-  min-height: 100%;
+footer {
+  height: 1em;
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 75em) {
+  body {
+    margin: 2em;
+  }
 }
 
 h1, h2, h3 {
@@ -18,23 +33,13 @@ h1, h2, h3 {
   margin-bottom: 1em;
 }
 
-/* Hide scrollbar */
-::-webkit-scrollbar {
-  display: none;
-}
-
-::selection {
-  color: #f2f2f2;
-  background: #171717;
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 p> a {
-  background-image: linear-gradient(#FF906B, #FF906B);
+  background-image: linear-gradient(#ff906b, #ff906b);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 15%;
@@ -49,18 +54,10 @@ ul {
 
 li {
   padding-right: 1em;
-  display: inline;
 }
 
 li:hover {
   color: #ff906b;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1em;
 }
 
 mark.orange {
@@ -71,3 +68,14 @@ mark.orange {
 .heart {
   color: #e25555;
 }
+
+/* Hide scrollbar */
+html { scrollbar-width: none; }
+::-webkit-scrollbar { display: none; }
+
+/* Custom highlight color */
+::selection {
+  color: #f2f2f2;
+  background: #171717;
+}
+
