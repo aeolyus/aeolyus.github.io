@@ -1,6 +1,9 @@
-body {
+html {
   color: #171717;
   background-color: #f2f2f2;
+}
+
+body {
   font-size: 1.1em;
   font-family: georgia, serif;
   line-height: 1.4em;
