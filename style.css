@@ -46,6 +46,11 @@ p> a {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 15%;
+  transition: background-size 100ms ease-in-out;
+}
+p> a:hover, a:focus {
+  background-size: 100% 100%;
+  transition: background-size 100ms ease-in-out;
 }
 
 ul {
@@ -59,7 +64,7 @@ li {
   padding-right: 1em;
 }
 
-li:hover {
+li:hover, li:focus-within {
   color: #ff906b;
 }
 
